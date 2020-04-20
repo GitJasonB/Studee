@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "5718bc99-7577-4ee7-a5e9-55bcdb19b6be",
+		"name": "Commodity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Commodity Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"commodityId\" : \"90000001\",\n\"name\" : \"Moon Cat\",\n\"commodityowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/commodities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"commodities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commodity Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"commodityId\" : \"90000001\",\n\"name\" : \"Moon Cat\",\n\"commodityowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/commodities/10101501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"commodities",
+						"10101501"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commodity Read (Singular)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"commodityId\" : \"90000001\",\n\"name\" : \"Moon Cat\",\n\"commodityowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/commodities/10101501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"commodities",
+						"10101501"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commodity Read (Multiple)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"commodityId\" : \"90000001\",\n\"name\" : \"Moon Cat\",\n\"commodityowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/commodities/?&limit=2&skip=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"commodities",
+						""
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "skip",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commodity Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"commodityId\": \"99101502\",\r\n    \"name\": \"Catssssss\",\r\n    \"commodityowner\": \"6e9c1024c5ed7a04646bc7f8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/commodities/99101501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"commodities",
+						"99101501"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

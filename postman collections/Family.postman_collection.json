@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "89373420-a5cc-47f8-811b-e65ccfd0e022",
+		"name": "Family",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Family Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"familyId\" : \"90000001\",\n\"name\" : \"Zebra Cat\",\n\"familyowner\" : \"5e9b0b0d24c538139cd195ab\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/families",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"families"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Family Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"familyId\" : \"90000001\",\n\"name\" : \"Zebra Cat\",\n\"familyowner\" : \"5e9b0b0d24c538139cd195ab\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/families/10100000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"families",
+						"10100000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Family Read (Singular)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"familyId\" : \"90000001\",\n\"name\" : \"Zebra Cat\",\n\"familyowner\" : \"5e9b0b0d24c538139cd195ab\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/families/10100000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"families",
+						"10100000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Family Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{      \r\n        \"familyId\": \"90100000\",\r\n        \"name\": \"LLLLLLive animals\",\r\n        \"familyowner\": \"5e9c1024c5ed7a04646bc7f5\"\r\n      \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/families/10100000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"families",
+						"10100000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Family Read (Multiple)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"familyId\" : \"90000001\",\n\"name\" : \"Zebra Cat\",\n\"familyowner\" : \"5e9b0b0d24c538139cd195ab\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/families/?sortBy=name&limit=3&skip=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"families",
+						""
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						},
+						{
+							"key": "skip",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

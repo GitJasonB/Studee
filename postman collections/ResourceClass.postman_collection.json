@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "d2a55024-58c5-47e4-9ae2-b1e1c3e2d03c",
+		"name": "ResourceClass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Class Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"resourceclassId\" : \"90000008\",\n\"name\" : \"Moon Cat\",\n\"resourceclassowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/classes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"resourceclassId\" : \"90000008\",\n\"name\" : \"Moon Cat\",\n\"resourceclassowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/classes/10101500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"10101500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class Read (Singular)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"resourceclassId\" : \"90000008\",\n\"name\" : \"Moon Cat\",\n\"resourceclassowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/classes/10101500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"10101500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class Read (Multiple)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"resourceclassId\" : \"90000008\",\n\"name\" : \"Moon Cat\",\n\"resourceclassowner\" : \"5e9b0b0d24c538139cd195ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/classes/?&limit=2&skip=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						""
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "skip",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"resourceclassId\": \"10101500\",\r\n        \"name\": \"Livestockkkkkkkkkk\",\r\n        \"resourceclassowner\": \"6e9c1024c5ed7a04646bc7f7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/classes/10101500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"10101500"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
