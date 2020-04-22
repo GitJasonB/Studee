@@ -15,7 +15,7 @@ Two containers should now be running. The data storage container is empty and so
 
 **docker logs <container_id_of jasonbrownuk/noderestapp> -f** 
 
-to see the logs of the node server outputted to the screen.
+...to see the logs of the node server outputted to the screen.
 
 In a browser, go to **http://ip_address_of_docker_server:3000/load** and observe the logs. Wait for ENDING-DATA-LOAD to appear (approx 10-15 seconds)
 
