@@ -11,9 +11,9 @@ Please run the following docker commands to get the system running….
 
 **docker run -p 3000:3000 --name node-server --network demo-network -d --rm jasonbrownuk/noderestapp**
 
-Two containers should now be running. The data storage container is empty and so the first thing to do is load the data, so please execute the following steps…..
+Two containers should now be running. The data storage container is empty and so the first thing to do is load the data, so please execute the following steps..
 
-**docker logs <container_id_of jasonbrownuk/noderestapp>) -f ** 
+**docker logs <container_id_of jasonbrownuk/noderestapp> -f** 
 
 to see the logs of the node server outputted to the screen.
 
