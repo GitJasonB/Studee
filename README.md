@@ -81,7 +81,7 @@ The URLs below should be prefixed with either https://brownjchallenge.herokuapp.
 | GET | /segments/23000000  |  |
 | GET | /segments/?sortBy=name&limit=3&skip=6 |  |
  | POST | /segments  | {"segmentId":"90000002", "name" : "Zebra Cat"}  |
-| GET | /segments/23000000  |  |
+| DELETE | /segments/23000000  |  |
  | PATCH | /segments/10000000  |{"name": "Industrial Manufacturing and Processing Machinery and Accessories CHANGE"}  |
 
 <p>The same API is supported for the other resources, please change the URL from segments to either families, classes or commodities. </P>
