@@ -108,7 +108,7 @@ The URLs below should be prefixed with either https://brownjchallenge.herokuapp.
 
   ##     Assumptions
 <p>The implementations of the APIs currently do not enforce referential integrity so for example deleting a segment may leave orphaned families. Similarly it is possible to create or update child resources without a valid parent (e.g. a commodity without a valid parent class).</P>
-<p>Implementations could be changed to those that do preserve referential integrity. For example, delete routines could be designed to fail if there are children (children would have to be deleted first in separate calls to the REST API). Alternatively removing a class could remove all commodities.</P>
+<p>Implementations could be changed to those that do preserve referential integrity. For example, delete routines could be designed to fail if there are children (children would have to be deleted first in separate calls to the REST API). Alternatively removing a class could remove all child commodities.</P>
 <p>Similarly, create and update operations could be changed to ensure valid parents exist first before completing.</P>
 <p>Thus 2 versions of the APIs could be offered.</p>
 
