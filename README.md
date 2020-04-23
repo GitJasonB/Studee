@@ -39,7 +39,7 @@ In a browser, go to **http://address_of_docker_server:3000/load** and observe th
 
 <p>(By the way, assuming Node is already installed on a PC, the following subsequent commands will get this running in the way a developer would do so, but I would recommend the Docker approach to installation over this).</P>
 
-> <p>https://github.com/GitJasonB/Studee.git<br />
+> <p>git clone https://github.com/GitJasonB/Studee.git<br />
 > npm install<br />
 > npm run dev<br />
 </p>
