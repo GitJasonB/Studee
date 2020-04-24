@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+
+   restapp:
+      image: jasonbrownuk/noderestapp
+      networks:
+         - rest-network
+      ports:
+         - 3000:3000
+      depends_on: 
+         - mongo-server
+
+   mongo-server:
+      image: mongo:latest
+      networks:
+         - rest-network
+     
+networks:
+   rest-network:
