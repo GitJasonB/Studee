@@ -31,7 +31,10 @@ In a browser, go to **http://address_of_docker_server:3000/load** and observe th
 >**docker-compose logs -f** 
 >...to see the logs of the services outputted to the screen.</P>
 >In a browser, go to **http://address_of_docker_server:3000/load** and observe the logs. Wait for ENDING-DATA-LOAD to appear (approx 10-15 seconds)</p>
-><p>The system is now ready to test.</p>
+><p>The system is now ready to test. When finished testing, the following can be used to stop the services.</p>
+
+>**docker-compose down**
+
 
 
 
